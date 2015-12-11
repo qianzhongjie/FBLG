@@ -1,0 +1,8 @@
+G:\fblg\FBLG\FBlungu.DBUtility\bin\Debug\FBlungu.DBUtility.dll
+G:\fblg\FBLG\FBlungu.DBUtility\bin\Debug\FBlungu.DBUtility.pdb
+G:\fblg\FBLG\FBlungu.DBUtility\bin\Debug\FBlungu.Common.dll
+G:\fblg\FBLG\FBlungu.DBUtility\bin\Debug\SharpZipLib.dll
+G:\fblg\FBLG\FBlungu.DBUtility\bin\Debug\FBlungu.Common.pdb
+G:\fblg\FBLG\FBlungu.DBUtility\obj\Debug\FBlungu.DBUtility.csprojResolveAssemblyReference.cache
+G:\fblg\FBLG\FBlungu.DBUtility\obj\Debug\FBlungu.DBUtility.dll
+G:\fblg\FBLG\FBlungu.DBUtility\obj\Debug\FBlungu.DBUtility.pdb

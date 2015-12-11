@@ -1,0 +1,586 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>个人后台管理</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bluth Company">
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../../assets/css/theme.css" rel="stylesheet">
+    <link href="../../assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../assets/css/alertify.css" rel="stylesheet">
+    <link href="../../assets/css/appmaterial.css" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.useso.com/css?family=Open+Sans:400,700" rel="stylesheet"
+        type="text/css">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="wrap">
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <div class="logo">
+                        <img src="../../assets/img/logo.png" alt="Realm Admin Template">
+                    </div>
+                    <a class="btn btn-navbar visible-phone" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar">
+                        </span></a><a class="btn btn-navbar slide_menu_left visible-tablet"><span class="icon-bar">
+                        </span><span class="icon-bar"></span><span class="icon-bar"></span></a>
+                    <div class="top-menu visible-desktop">
+                        <ul class="pull-right">
+                            <li><a href="../Test/Index"><i class="icon-off"></i>退出</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <!-- Side menu -->
+            <div class="sidebar-nav nav-collapse collapse active">
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a id="MsgList" class="accordion-toggle b_C3F7A7 active" data-toggle="collapse" data-parent="#accordion2">
+                            <i class="icon-envelope"></i><span>个人信息</span></a>
+                    </div>
+                    <div id="collapse1" class="accordion-body">
+                        <div class="accordion-inner" for=".tab-body-right">
+                            <a class="accordion-toggle b_C3F7A7 active" for=".material-mass" dataid="1"><i class="icon-envelope">
+                            </i>信息</a>@* <a class="accordion-toggle b_C3F7A7" for=".material-material" dataid="2">
+                                <i class="icon-list-alt"></i>增加</a> <a class="accordion-toggle b_C3F7A7" for=".material-record"
+                                    dataid="3"><i class="icon-table"></i>消息记录</a>*@
+                        </div>
+                    </div>
+                </div>
+                @*                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle b_9FDDF6 collapsed" data-toggle="collapse" data-parent="#accordion2">
+                            <i class="icon-reorder"></i><span>开发中...</span></a>
+                    </div>
+                </div>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle b_F6F1A2"><i class="icon-tasks"></i><span>开发中...</span></a>
+                    </div>
+                </div>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle b_C1F8A9"><i class="icon-bar-chart"></i><span>开发中...</span></a>
+                    </div>
+                </div>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle b_9FDDF6"><i class="icon-bullhorn"></i><span>开发中...</span></a>
+                    </div>
+                </div>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle b_F5C294"><i class="icon-user"></i><span>开发中...</span></a>
+                    </div>
+                </div>*@
+            </div>
+        </div>
+        <!-- /Side menu -->
+        <!-- Main window -->
+        <div class="main_container" id="dashboard_page">
+            <div class="main-p-body">
+                <div class="contact-body">
+                    <div class="contact-right">
+                        <div class="tab-body-right">
+                            <div class="material-mass" dataid="1">
+                                <div class="" style="padding: 20px 0;">
+                                    <form>
+                                    <div class="tab sendTab">
+                                        <ul class="nav nav-tabs">
+                                            <li role="presentation" class="active"><a for="sendWords" href="javascript:;" data="1"
+                                                onclick="Serach()">列表</a></li>
+                                            <li role="presentation"><a for="sendImages" href="javascript:;" data="2">添加</a></li>
+                                            @* <li role="presentation"><a for="sendSounds" href="javascript:;" data="3">删除</a></li>*@
+                                            @*<li role="presentation"><a for="sendVideos" href="javascript:;" data="4">视频</a></li>
+                                            <li role="presentation"><a for="sendImgText" href="javascript:;" data="6">图文</a></li>
+                                            <li role="presentation"><a for="sendFiles" href="javascript:;" data="5">文件</a></li>*@
+                                            <label for="title" class="control-label">
+                                            </label>
+                                            <label for="title" class="control-label">
+                                            </label>
+                                            <label for="title" class="control-label">
+                                            </label>
+                                            <li>
+                                                <input type="button" class="btn-warning" value="修改" onclick="UserInfo()" /></li>
+                                            <li class="pull-right">
+                                                <button class="btn btn-danger" type="button" id="buttton_materialWords">
+                                                    删除</button>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div id="sendWords">
+                                                <table class="table table-hover" id="table-list">
+                                                </table>
+                                                <div style="display: none;" id="form_edit">
+                                                    
+                                                    <div class="form-group">
+                                                        <label for="exampleInputUser2">
+                                                            账号</label>
+                                                        <input type="text" class="form-control" id="exampleInputUser2" placeholder="账号">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputPassword1">
+                                                            密码</label>
+                                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="密码">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputName1">
+                                                            姓名</label>
+                                                        <input type="text" class="form-control" id="exampleInputName1" placeholder="姓名">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">
+                                                            邮箱</label>
+                                                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="邮箱">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEducation1">
+                                                            学历</label>
+                                                        <input type="text" class="form-control" id="exampleInputEducation1" placeholder="学历">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputProduct1">
+                                                            商品</label>
+                                                        <input type="text" class="form-control" id="exampleInputProduct1" placeholder="商品">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputPostcode1">
+                                                            邮编</label>
+                                                        <input type="text" class="form-control" id="exampleInputPostcode1" placeholder="邮编">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputAddress1">
+                                                            地址</label><input type="text" class="form-control" id="exampleInputAddress1" placeholder="地址" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputPhone1">
+                                                            电话</label>
+                                                        <input type="phone" class="form-control" id="exampleInputPhone1" placeholder="手机">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputSex1">
+                                                            性别</label><input type="text" class="form-control" id="exampleInputSex1" placeholder="性别" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputAge1">
+                                                            年龄</label><input type="text" class="form-control" id="exampleInputAge1" placeholder="年龄" />
+                                                    </div>
+                                                    <div class="form-group"style="display: none;" >
+                                                        <label for="exampleInputFile1">
+                                                            照片</label>
+                                                        <input type="file" id="exampleInputFile1">
+                                                        <p class="help-block">
+                                                            <img width="100px" height="100px" id="Photo" /></p>
+                                                    </div>
+                                                    <input type="button" onclick="save_edit()" class="btn btn-success"value="保存">
+                                                        
+                                                    
+                                                </div>
+                                            </div>
+                                            <div id="sendImages" class="padding20 float sendImagesList">
+                                                <form>
+                                                 <div class="form-group">
+                                                        <label for="exampleInputUser1">
+                                                            账号</label>
+                                                        <input type="text" class="form-control" id="exampleInputUser1" placeholder="账号">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputPassword">
+                                                            密码</label>
+                                                        <input type="password" class="form-control" id="exampleInputPassword" placeholder="密码">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputName">
+                                                            姓名</label>
+                                                        <input type="text" class="form-control" id="exampleInputName" placeholder="姓名">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail">
+                                                            邮箱</label>
+                                                        <input type="text" class="form-control" id="exampleInputEmail" placeholder="邮箱">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEducation">
+                                                            学历</label>
+                                                        <input type="text" class="form-control" id="exampleInputEducation" placeholder="学历">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputProduct">
+                                                            商品</label>
+                                                        <input type="text" class="form-control" id="exampleInputProduct" placeholder="商品">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputPostcode">
+                                                            邮编</label>
+                                                        <input type="text" class="form-control" id="exampleInputPostcode" placeholder="邮编">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputAddress">
+                                                            地址</label><input type="text" class="form-control" id="exampleInputAddress" placeholder="地址" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputPhone">
+                                                            电话</label>
+                                                        <input type="phone" class="form-control" id="exampleInputPhone" placeholder="手机">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputSex">
+                                                            性别</label><input type="text" class="form-control" id="exampleInputSex" placeholder="性别" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputAge">
+                                                            年龄</label><input type="text" class="form-control" id="exampleInputAge" placeholder="年龄" />
+                                                    </div>
+                                                    <div class="form-group"style="display: none;" >
+                                                        <label for="exampleInputFile">
+                                                            照片</label>
+                                                        <input type="file" id="exampleInputFile">
+                                                        <p class="help-block">
+                                                            <img width="100px" height="100px" id="Photo" /></p>
+                                                    </div>
+                                                    <input type="button" onclick="AddUser()" class="btn btn-success" value="保存">
+                                                      
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Main window -->
+        </div>
+        <!--/.fluid-container-->
+    </div>
+    <script src="../../assets/js/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../../assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/raphael-min.js"></script>
+    <script type="text/javascript" src="../../assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src='../../assets/js/sparkline.js'></script>
+    <script type="text/javascript" src="../../assets/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery.masonry.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery.imagesloaded.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery.facybox.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery.alertify.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery.knob.js"></script>
+    <script type='text/javascript' src='../../assets/js/fullcalendar.min.js'></script>
+    <script type='text/javascript' src='../../assets/js/jquery.gritter.min.js'></script>
+    <script type="text/javascript" src="../../assets/js/jquery.slimscroll.min.js"></script>
+    <script src="../../assets/js/ueditor/ueditor.config.js" type="text/javascript"></script>
+    <script src="../../assets/js/ueditor/ueditor.all.min.js" type="text/javascript"></script>
+    <script src="../../assets/js/jquery.plugins.js" type="text/javascript"></script>
+    <script src="../../assets/js/default.js" type="text/javascript"></script>
+    <script src="../../assets/js/jquery.form.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+    var allId=0;
+        var material = {
+            showMaterialList: function (type) {
+                $('.material-material .nav .pull-right').show();
+                $('.material-material .nav-tabs .pull-right .btn-action').hide();
+                $('.material-material .nav .pull-right #btn-' + type).show();
+                $('.addMaterial').hide();
+                $('.tab-content').show();
+
+            }
+        };
+        function Serach() {
+            $.ajax({
+                url: "/Test/Search",
+                type: "POST",
+                dataType: "json",
+                data: {},
+                success: function (objs) {
+                    $("#table-list").show();
+                    $("#form_edit").hide();
+                    var html = '';
+                    for (var i = 0; i < objs.List.length; i++) {
+                        html += '<tr dataid="' + objs.List[i].Id + '"><td><a  href="javascript:void(0)">' + objs.List[i].Name + '</a></td><td></td></tr>';
+                    }
+                    $("#table-list").html(html);
+                    //                    if (objs.code == 0) {
+
+                    //                    } else { }
+
+                }
+            });
+        }
+        function UserInfo() {
+        allId=$("#table-list .active").attr('dataid');
+            $.ajax({
+                url: "/Test/LockInfo",
+                type: "POST",
+                dataType: "json",
+                data: { Id: $("#table-list .active").attr('dataid') },
+                success: function (objs) {
+                    $("#table-list").hide();
+                    $("#form_edit").show();
+                    var data = objs.data;
+                    $("#exampleInputUser2").val(data.User);
+                    $("#exampleInputPassword1").val(data.Pwd);
+                    $("#exampleInputName1").val(data.Name);
+                    $("#exampleInputEmail1").val(data.Email);
+                    $("#exampleInputEducation1").val(data.Education);
+                    $("#exampleInputProduct1").val(data.Product);
+                    $("#exampleInputPostcode1").val(data.PostCode);
+                    $("#exampleInputPhone1").val(data.Phone);
+                    $("#Photo1").val(data.Photo);
+                    $("#exampleInputAddress1").val(data.Address);
+                    $("#exampleInputAge1").val(data.Age);
+                    $("#exampleInputSex1").val(data.Sex)
+                }
+            });
+        }
+        function save_edit() {
+            var str = '{"Id":"'+allId+'","User":"' + $("#exampleInputUser2").val() + '","Pwd":"' + $("#exampleInputPassword1").val() +'","Name":"' + $("#exampleInputName1").val() +'","Email":"' + $("#exampleInputEmail1").val() +'","Education":"' + $("#exampleInputEducation1").val() +'","Product":"' + $("#exampleInputProduct1").val() + '","PostCode":"' + $("#exampleInputPostCode1").val() +'","Phone":"' + $("#exampleInputPhone1").val() +'","Photo":"' + $("#Photo1").val() +'","Address":"' + $("#exampleInputAddress1").val()+'","Age":"' + $("#exampleInputAge1").val() +'","Sex":"' + $("#exampleInputSex1").val() + '"}';
+            $.ajax({
+                url: "/Test/Svae",
+                type: "POST",
+                dataType: "json",
+                data: { JsonString:str},
+                success: function (objs) {
+                    if (objs.code == 0) {
+                        alert(objs.msg);
+                    } else { alert(objs.msg); }
+
+                }
+            });
+        }
+        function Delete(id) {
+            $.ajax({
+                url: "/Test/Delete",
+                type: "POST",
+                dataType: "json",
+                data: { Id: id },
+                success: function (objs) {
+
+                    if (objs.code == 0) {
+                        alert(objs.msg);
+                    } else { alert(objs.msg); }
+                    Serach();
+                }
+            });
+        }
+        function AddUser()
+        {
+        var str = '{"Id":"0","User":"' + $("#exampleInputUser1").val() + '","Pwd":"' + $("#exampleInputPassword").val() +'","Name":"' + $("#exampleInputName").val() +'","Email":"' + $("#exampleInputEmail").val() +'","Education":"' + $("#exampleInputEducation").val() +'","Product":"' + $("#exampleInputProduct").val() + '","PostCode":"' + $("#exampleInputPostCode").val() +'","Phone":"' + $("#exampleInputPhone").val() +'","Photo":"' + $("#Photo").val() +'","Address":"' + $("#exampleInputAddress").val()+'","Age":"' + $("#exampleInputAge").val() +'","Sex":"' + $("#exampleInputSex").val() + '"}';
+            $.ajax({
+                url: "/Test/Svae",
+                type: "POST",
+                dataType: "json",
+                data: { JsonString:str},
+                success: function (objs) {
+                    if (objs.code == 0) {
+                        alert(objs.msg);
+                    } else { alert(objs.msg); }
+
+                }
+            });
+        }
+        $(function () {
+            //yewu
+            Serach();
+
+
+
+
+
+            $('.materialTab').tab({
+                change: function (obj) {
+                    material.showMaterialList($(obj).attr('for'));
+                }
+            });
+            $('.sendTab').tab({
+                change: function (obj) {
+
+                }
+            });
+            $('div[dataid=2]').hide();
+            $("#MsgList").click(function () {
+                if ($("#collapse1").attr('class') == "accordion-body collapse") {
+                    $("#collapse1").removeClass('collapse');
+                    $(this).addClass('collapsed');
+                } else {
+                    $("#collapse1").addClass('collapse');
+                    $(this).removeClass('collapsed');
+
+                }
+            });
+            $("#collapse1").delegate('a', 'click', function () {
+                $(this).siblings('a').removeClass('active');
+                $(this).addClass('active');
+                var id = $(this).attr('dataid');
+                if (id == "1") {
+                    $('div[dataid=' + id + ']').show();
+                    $('div[dataid=2]').hide();
+                    $('div[dataid=3]').hide();
+                    Serach();
+                } else if (id == "2") {
+                    $('div[dataid=' + id + ']').show();
+                    $('div[dataid=1]').hide();
+                    $('div[dataid=3]').hide();
+                } else {
+                    $('div[dataid=' + id + ']').show();
+                    $('div[dataid=2]').hide();
+                    $('div[dataid=1]').hide();
+                }
+            });
+            //文本素材
+            $('#btn-materialWords').click(function (event) {
+                $('#add-materialWords .dataid').val('0');
+                $('#add-materialWords .words-content').val('');
+                $('.tab-content,.material-material .nav .pull-right').hide();
+                $('.addMaterial').show().find('#add-materialWords').show().siblings().hide();
+            });
+            $('#materialWords').delegate('.btn-editMaterialWords', 'click', function (event) {
+                $('#add-materialWords .dataid').val($(this).parents('tr').attr('dataid'));
+                $('#add-materialWords .words-content').val($($(this).parents('tr').find('td')[0]).html());
+
+                $('.tab-content,.material-material .nav .pull-right').hide();
+                $('.addMaterial').show().find('#add-materialWords').show().siblings().hide();
+
+            });
+
+            $('#buttton_materialWords').click(function () {
+                var aobj = this;
+                if (confirm("你确定要删除该记录？")) {
+                    var dataid = $("#table-list .active").attr('dataid');
+
+                    Delete(dataid);
+                    $(aobj).parents('li').remove();
+                }
+
+            });
+
+            $('#add-materialWords .btn-saveMaterialWords').click(function (event) {
+                material.saveWord($('#add-materialWords form').serialize(), function () {
+                    material.showMaterialList($('.material-material .tab .active a').attr('for'));
+                });
+            });
+            $('#add-materialWords .btn-cancelMaterialWords').click(function (event) {
+                material.showMaterialList($('.material-material .tab .active a').attr('for'));
+            });
+
+            //图片
+            $('#materialImages').delegate('.btn-delMaterialImages', 'click', function (event) {
+                var aobj = this;
+                $.messager.confirm('删除提示', '你确定要删除该素材', '', function (r) {
+                    if (r) {
+                        material.delImage({ id: $(aobj).attr('dataid') }, function () {
+
+                            $(aobj).parents('li').remove();
+
+                        });
+                    }
+                })
+            });
+
+            //图文
+            $('#materialImgText').delegate('.btn-delMaterialImgText', 'click', function (event) {
+                var aobj = this;
+                $.messager.confirm('删除提示', '你确定要删除该素材', '', function (r) {
+                    if (r) {
+                        material.delImgText({ id: $(aobj).parents('li').attr('dataid') }, function () {
+                            $(aobj).parents('li').remove();
+                        });
+                    }
+                })
+            });
+
+            //单图文
+            $('#btn-materialSingleImgText').click(function (event) {
+                $('.tab-content,.material-material .nav .pull-right').hide();
+                $('.addMaterial').show().find('#add-materialSingleImgText').show().siblings().hide();
+            });
+            $('#btn-materialManyImgText').click(function (event) {
+                $('.tab-content,.material-material .nav .pull-right').hide();
+                $('.addMaterial').show().find('#add-materialManyImgText').show().siblings().hide();
+            });
+
+            $('.remote-link').click(function (event) {
+                if (!$(this).hasClass('checkbox_select')) {
+                    $(this).parents('form').find('.material-content').hide();
+                    $(this).parents('form').find('.material-link').show();
+                } else {
+                    $(this).parents('form').find('.material-content').show();
+                    $(this).parents('form').find('.material-link').hide();
+                }
+            });
+
+            //多图文
+            $('#add-materialManyImgText .article-add').click(function (event) {
+                var aobj = '<a href="javascript:;" class="article-item"><span class="article-img-placeholder"></span><p class="article-title">标题</p><img class="article-img" src=""><span class="article-del"><i class="glyphicon glyphicon-trash"></i></span></a>'
+                $(aobj).insertBefore($(this));
+                if ($('#add-materialManyImgText .article-item').length > 8) {
+                    $(this).hide();
+                }
+            });
+            $('#add-materialManyImgText .manylist').delegate('a', 'click', function (event) {
+                if (!$(this).hasClass('article-add')) {
+                    $('#add-materialManyImgText .manylist .active').removeClass('active');
+                    $(this).addClass('active');
+                }
+            });
+            $('#add-materialManyImgText .manylist').delegate('.article-del', 'click', function (event) {
+                if ($('#add-materialManyImgText .article-item').length == 3) {
+                    $.messager.tips('至少保留一个项', 'error');
+                    return;
+                }
+                $(this).parent().remove();
+                $('#add-materialManyImgText .manylist .article-add').show();
+            });
+
+            var editor = new UE.ui.Editor({ initialFrameHeight: 200 });
+            editor.render("editor");
+            //var ue = UE.getEditor('editor');
+
+            var manyeditor = new UE.ui.Editor({ initialFrameHeight: 200 });
+            manyeditor.render("manyeditor");
+
+            $('.sendReceive').delegate('.item-content-close', 'click', function (event) {
+                $(this).parent().remove();
+                event.stopPropagation();
+            });
+
+            $('.sendTab table').delegate('tr', 'click', function (event) {
+                $(this).siblings('tr').removeClass('active');
+                $(this).addClass('active');
+            });
+            $('.sendImagesList').delegate('li', 'click', function (event) {
+                $(this).siblings('li').removeClass('active');
+                $(this).addClass('active');
+            });
+            $('.sendImgTextList').delegate('li', 'click', function (event) {
+                $(this).siblings('li').removeClass('active');
+                $(this).addClass('active');
+            });
+
+            left_right_layout();
+            $(window).resize(function (e) {
+                left_right_layout();
+            });
+            $('.tab-nav-grounp .active').click();
+            $('#message-to-app').on('click', '.dropdown-menu a', function (event) {
+                event.preventDefault();
+                $('#message-to-app .dropdown-toggle').html($(this).html() + ' <span class="caret"></span>');
+                $('#message-to-app').attr('value', $(this).parent().attr('data-id'));
+            });
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+G:\fblg\FBLG\FBlungu.IDAL\bin\Debug\FBlungu.IDAL.dll
+G:\fblg\FBLG\FBlungu.IDAL\bin\Debug\FBlungu.IDAL.pdb
+G:\fblg\FBLG\FBlungu.IDAL\bin\Debug\FBlungu.Model.dll
+G:\fblg\FBLG\FBlungu.IDAL\bin\Debug\FBlungu.Model.pdb
+G:\fblg\FBLG\FBlungu.IDAL\obj\Debug\FBlungu.IDAL.csprojResolveAssemblyReference.cache
+G:\fblg\FBLG\FBlungu.IDAL\obj\Debug\FBlungu.IDAL.dll
+G:\fblg\FBLG\FBlungu.IDAL\obj\Debug\FBlungu.IDAL.pdb

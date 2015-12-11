@@ -1,0 +1,5 @@
+G:\fblg\FBLG\FBlungu.Common\bin\Debug\FBlungu.Common.dll
+G:\fblg\FBLG\FBlungu.Common\bin\Debug\FBlungu.Common.pdb
+G:\fblg\FBLG\FBlungu.Common\obj\Debug\FBlungu.Common.dll
+G:\fblg\FBLG\FBlungu.Common\obj\Debug\FBlungu.Common.pdb
+G:\fblg\FBLG\FBlungu.Common\obj\Debug\FBlungu.Common.csprojResolveAssemblyReference.cache

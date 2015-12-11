@@ -1,0 +1,5 @@
+G:\fblg\FBLG\FBlungu.Model\bin\Debug\FBlungu.Model.dll
+G:\fblg\FBLG\FBlungu.Model\bin\Debug\FBlungu.Model.pdb
+G:\fblg\FBLG\FBlungu.Model\obj\Debug\FBlungu.Model.dll
+G:\fblg\FBLG\FBlungu.Model\obj\Debug\FBlungu.Model.pdb
+G:\fblg\FBLG\FBlungu.Model\obj\Debug\FBlungu.Model.csprojResolveAssemblyReference.cache

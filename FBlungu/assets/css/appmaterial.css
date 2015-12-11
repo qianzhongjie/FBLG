@@ -1,0 +1,83 @@
+.material-material .nav .pull-right{padding:5px 10px;}
+a{ color:#000;}
+a:active,a:visited,a:focus{ color:inherit;}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	cursor: pointer;
+}
+.row{margin:0px;}
+.tab-content .table td{ padding:10px 20px;}
+.tab-content .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    border-bottom:1px solid #ddd;
+    border-top:none;
+    line-height: 1.42857;
+    padding: 8px;
+    vertical-align: top;
+}
+.table-active a{ margin-right: 10px; font-size: 16px;}
+
+.float li{ float: left; margin:0 20px 20px 0;}
+.pic-image >a{ border:1px solid #ccc; display: block;}
+.pic-image >a img{ width: 170px; height: 180px;}
+.pic-image{ position: relative;}
+.pic-image:hover .image-action{ display: block;}
+.image-action{ position:absolute; bottom: 0px; left: 0px; width: 100%; background: rgba(0,0,0,0.7); display: none;}
+.image-action a{ float: left; display: block; width: 100%; padding:10px; text-align: center; color:#fff; font-size: 18px;}
+.pic-name{ text-align: center; padding:5px 0;}
+
+
+
+
+.imgtext-list li{ width: 33%; float: left; min-width: 200px;}
+.imgtext-list .imgtext-unit{ border:1px solid #ccc; border-radius: 4px; padding:10px; position: relative; margin:0 20px 20px 0;}
+.imgtext-unit .imgtext-image{height: 190px; overflow: hidden; width: 100%; margin-bottom: 10px;}
+.imgtext-unit .imgtext-image img{ width: 100%; display: inline-block;vertical-align: middle}
+.imgtext-title{ padding: 0px; margin:0px;}
+.imgtext-unit:hover .image-action{ display: block;}
+.imgtext-list .image-action a{ width: 50%;}
+.material-material .dropdown-menu{ right:0px; left:inherit;}
+.material-material .btn-action {
+    position: relative;
+}
+
+
+
+#add-materialWords .form-control{ height: 300px; margin-bottom: 20px; width: 600px; display: block; resize:none;}
+.imgtext-form{ max-width: 700px;}
+.imgtext-form .form-control{ max-width: 400px;}
+form .form-required{ color:#c00;}
+
+#add-materialManyImgText .col-md-4{ width: 300px;}
+
+.manylist{ border:1px solid #ccc; border-radius:4px;}
+.manylist a{ border-top: 1px solid #ccc; display: block; padding:10px;}
+.manylist a:hover{ text-decoration: none;}
+.manylist a:hover .article-del{ display: block; color:#fff;}
+.manylist a.active{ background: #4a90e2;}
+
+.article-item{ clear: both; overflow: hidden; position: relative;}
+.article-item .article-title{ margin:0 60px 0 0; height: 60px; line-height: 20px; overflow: hidden; font-size: 16px; background: #fff;}
+.article-item .article-img{ display: none;}
+.article-item .article-img-placeholder{ width: 60px; height: 60px; background: #eee; display: block; float: right;}
+.article-item .article-del{ position: absolute; height: 100%; top: 0px; right:0px; background: rgba(0,0,0,0.5); width: 80px; text-align: center; font-size: 26px; display: none;}
+.article-item .article-del i{line-height: 80px; }
+
+.manylist .article-first{border:none; height: 160px; position: relative;}
+.manylist .article-first .article-img-placeholder{ display: block; float: none; width: 100%; height: 140px; line-height: 140px; text-align: center; color:#777;}
+.manylist .article-first .article-title{ position: absolute; bottom: 10px; height: 30px; line-height: 30px; width: 248px; color:#fff; padding:0 10px; background: rgba(0,0,0,0.7);}
+.article-add{ text-align: center; font-size: 30px; padding:20px 0; color:#e5e5e5;}
+.article-add:hover,.article-add:focus{ color:#e5e5e5;}
+
+
+.form-horizontal .form-group {
+    margin:0 0 20px 0;
+}
+.sendTab .table >tbody> tr.active td{ background: #598ffd; color:#fff;}
+.sendTab .sendImagesList li.active .pic-image{ border:2px solid #598ffd;}
+.sendImgTextList li.active .imgtext-unit{border:2px solid #598ffd;}
+
+#message-to-app img{
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	margin-right: 5px;
+}

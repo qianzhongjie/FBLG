@@ -1,0 +1,17 @@
+G:\fblg\FBLG\FBlungu.BLL\bin\Debug\FBlungu.BLL.dll
+G:\fblg\FBLG\FBlungu.BLL\bin\Debug\FBlungu.BLL.pdb
+G:\fblg\FBLG\FBlungu.BLL\obj\Debug\FBlungu.BLL.dll
+G:\fblg\FBLG\FBlungu.BLL\obj\Debug\FBlungu.BLL.pdb
+G:\fblg\FBLG\FBlungu.BLL\obj\Debug\FBlungu.BLL.csprojResolveAssemblyReference.cache
+G:\fblg\FBLG\FBlungu.BLL\bin\Debug\FBlungu.DALFactory.dll
+G:\fblg\FBLG\FBlungu.BLL\bin\Debug\FBlungu.IDAL.dll
+G:\fblg\FBLG\FBlungu.BLL\bin\Debug\FBlungu.Model.dll
+G:\fblg\FBLG\FBlungu.BLL\bin\Debug\FBlungu.DALFactory.pdb
+G:\fblg\FBLG\FBlungu.BLL\bin\Debug\FBlungu.IDAL.pdb
+G:\fblg\FBLG\FBlungu.BLL\bin\Debug\FBlungu.Model.pdb
+G:\fblg\FBLG\FBlungu.BLL\bin\Debug\FBlungu.Common.dll
+G:\fblg\FBLG\FBlungu.BLL\bin\Debug\SharpZipLib.dll
+G:\fblg\FBLG\FBlungu.BLL\bin\Debug\Enyim.Caching.dll
+G:\fblg\FBLG\FBlungu.BLL\bin\Debug\ChnCharInfo.dll
+G:\fblg\FBLG\FBlungu.BLL\bin\Debug\log4net.dll
+G:\fblg\FBLG\FBlungu.BLL\bin\Debug\FBlungu.Common.pdb

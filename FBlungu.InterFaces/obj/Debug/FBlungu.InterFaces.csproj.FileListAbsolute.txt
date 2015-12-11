@@ -1,0 +1,13 @@
+G:\fblg\FBLG\FBlungu.InterFaces\bin\FBlungu.InterFaces.dll
+G:\fblg\FBLG\FBlungu.InterFaces\bin\FBlungu.InterFaces.pdb
+G:\fblg\FBLG\FBlungu.InterFaces\obj\Debug\FBlungu.InterFaces.dll
+G:\fblg\FBLG\FBlungu.InterFaces\obj\Debug\FBlungu.InterFaces.pdb
+G:\fblg\FBLG\FBlungu.InterFaces\obj\Debug\FBlungu.InterFaces.csprojResolveAssemblyReference.cache
+G:\fblg\FBLG\FBlungu.InterFaces\bin\FBlungu.InterFaces.dll.config
+G:\fblg\FBLG\FBlungu.InterFaces\bin\System.Web.Helpers.dll
+G:\fblg\FBLG\FBlungu.InterFaces\bin\System.Web.Mvc.dll
+G:\fblg\FBLG\FBlungu.InterFaces\bin\System.Web.WebPages.dll
+G:\fblg\FBLG\FBlungu.InterFaces\bin\System.Web.Razor.dll
+G:\fblg\FBLG\FBlungu.InterFaces\bin\System.Web.WebPages.Razor.dll
+G:\fblg\FBLG\FBlungu.InterFaces\bin\Microsoft.Web.Infrastructure.dll
+G:\fblg\FBLG\FBlungu.InterFaces\bin\System.Web.WebPages.Deployment.dll
